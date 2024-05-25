@@ -23,7 +23,7 @@ cd FastApi
 <p>This endpoint allows you to upload a PDF file, which will be processed and the extracted text data will be sent to a specified webhook URL.</p>
 
 <ul>
-  <li><strong>URL:</strong> <code>/webhook/</code></li>
+  <li><strong>http://127.0.0.1:8000/docs#/default/upload_pdf_webhook__post</strong> <code>/webhook/</code></li>
   <li><strong>Method:</strong> POST</li>
   <li><strong>Request Body:</strong>
     <ul>
