@@ -1,7 +1,7 @@
 <h1>FastAPI Webhook and Polling</h1>
 
 <p>This project implements webhook and polling endpoints using FastAPI to upload PDF files, process them, and check their processing status.</p>
-<li><strong>http://127.0.0.1:8000/docs#/</strong><code></code></li>
+
 <h2>Installation</h2>
 
 <ol>
@@ -23,6 +23,7 @@ cd FastApi
 </code></pre>
 
 <p>This will start the FastAPI server locally.</p>
+<li><strong>http://127.0.0.1:8000/docs#/</strong><code></code></li>
 
 <h3>Running Celery</h3>
 
@@ -32,9 +33,7 @@ cd FastApi
   <li>Start a Celery worker:
     <pre><code>celery -A app.celery:celery_app worker --loglevel=info
 </code></pre></li>
-  <li>Start a Celery beat for periodic tasks (if any):
-    <pre><code>celery -A app.celery:celery_app worker --loglevel=info
-</code></pre></li>
+  
 </ol>
 
 <h3>Webhook Endpoint</h3>
