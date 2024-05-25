@@ -60,18 +60,8 @@ cd FastApi
   </li>
 </ul>
 
-<h4>Testing Instructions:</h4>
 
-<ol>
-  <li>Use any API testing tool like Postman or cURL to send a POST request to the <code>/webhook/</code> endpoint.</li>
-  <li>Attach a PDF file to the request body using the <code>file</code> parameter.</li>
-  <li>Send the request to upload the PDF file.</li>
-  <li>Verify that the response contains the <code>pdf_id</code> and <code>text</code> extracted from the PDF.</li>
-</ol>
 
-<h3>Polling Endpoint</h3>
-
-<h4>Description:</h4>
 
 <p>This endpoint allows you to check the processing status of the uploaded PDF file.</p>
 
@@ -100,14 +90,23 @@ cd FastApi
   </li>
 </ul>
 
-<h4>Testing Instructions:</h4>
+<h2>Testing</h2>
+
+<h3>Using FastAPI Swagger UI</h3>
 
 <ol>
-  <li>Use any API testing tool like Postman or cURL to send a POST request to the <code>/polling/</code> endpoint.</li>
-  <li>Provide the <code>pdf_id</code> of the uploaded PDF file in the request body.</li>
-  <li>Send the request to check the processing status.</li>
-  <li>Verify the response to see if the processing is completed or still in progress.</li>
+  <li>Navigate to <code>http://127.0.0.1:8000/docs</code> in your web browser.</li>
+  <li>Upload a PDF file using the <code>/webhook/</code> endpoint.</li>
+  <li>Check the processing status using the <code>/polling/</code> endpoint.</li>
 </ol>
+
+<h3>Webhook Test Site</h3>
+
+<p>You can use the provided webhook test site to receive the <code>pdf_id</code> and <code>text</code> data simultaneously:</p>
+
+<p><a href="https://webhook.site/#!/view/cdbb1b50-031c-4901-8429-a1c88d10767a/720edd61-1e0d-46db-b53c-0afb9617e532/1">https://webhook.site/#!/view/cdbb1b50-031c-4901-8429-a1c88d10767a/720edd61-1e0d-46db-b53c-0afb9617e532/1</a></p>
+
+<p>Use this URL as the webhook endpoint to receive the data when processing is complete.</p>
 
 <h2>Contributing</h2>
 
