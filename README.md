@@ -1,7 +1,7 @@
 <h1>FastAPI Webhook and Polling</h1>
 
 <p>This project implements webhook and polling endpoints using FastAPI to upload PDF files, process them, and check their processing status.</p>
-
+<li><strong>http://127.0.0.1:8000/docs#/</strong>strong> <code></code></li>
 <h2>Installation</h2>
 
 <ol>
@@ -23,7 +23,7 @@ cd FastApi
 <p>This endpoint allows you to upload a PDF file, which will be processed and the extracted text data will be sent to a specified webhook URL.</p>
 
 <ul>
-  <li><strong>http://127.0.0.1:8000/docs#/default/upload_pdf_webhook__post</strong> <code>/webhook/</code></li>
+  <li><strong>http://127.0.0.1:8000/docs#/default/upload_pdf_webhook__post</strong> <code></code></li>
   <li><strong>Method:</strong> POST</li>
   <li><strong>Request Body:</strong>
     <ul>
@@ -54,7 +54,7 @@ cd FastApi
 <p>This endpoint allows you to check the processing status of the uploaded PDF file.</p>
 
 <ul>
-  <li><strong>URL:</strong> <code>/polling/</code></li>
+  <li><strong>http://127.0.0.1:8000/docs#/default/polling_polling__post</strong> <code></code></li>
   <li><strong>Method:</strong> POST</li>
   <li><strong>Request Body:</strong>
     <ul>
