@@ -96,6 +96,8 @@ cd FastApi
 
 <ol>
   <li>Navigate to <code>http://127.0.0.1:8000/docs</code> in your web browser.</li>
+  
+<li><strong>http://127.0.0.1:8000/docs#/</strong><code></code></li>
   <li>Upload a PDF file using the <code>/webhook/</code> endpoint.</li>
   <li>Check the processing status using the <code>/polling/</code> endpoint.</li>
 </ol>
