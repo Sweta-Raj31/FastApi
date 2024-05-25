@@ -15,6 +15,27 @@ cd FastApi
 </ol>
 
 <h2>Usage</h2>
+<h3>Running the Application</h3>
+
+<p>To run the FastAPI application, execute the following command:</p>
+
+<pre><code>uvicorn app.main:app --reload
+</code></pre>
+
+<p>This will start the FastAPI server locally.</p>
+
+<h3>Running Celery</h3>
+
+<p>Celery is used for asynchronous task processing. To start Celery, open a new terminal and navigate to the project directory.</p>
+
+<ol>
+  <li>Start a Celery worker:
+    <pre><code>celery -A app.celery:celery_app worker --loglevel=info
+</code></pre></li>
+  <li>Start a Celery beat for periodic tasks (if any):
+    <pre><code>celery -A app.celery:celery_app worker --loglevel=info
+</code></pre></li>
+</ol>
 
 <h3>Webhook Endpoint</h3>
 
