@@ -13,7 +13,39 @@ cd FastApi
     <pre><code>pip install -r requirements.txt
 </code></pre></li>
 </ol>
+<h1>Installing Redis on Windows</h1>
 
+<p>For Windows, you can use the official Redis for Windows maintained by Microsoft Open Tech.</p>
+
+<h2>Download Redis for Windows:</h2>
+
+<ol>
+  <li>Go to the <a href="https://github.com/microsoftarchive/redis/releases">Microsoft Archive</a> and download the latest Redis .zip file.</li>
+</ol>
+
+<h2>Extract the Redis files:</h2>
+
+<ol start="2">
+  <li>Extract the contents of the .zip file to a location of your choice.</li>
+</ol>
+
+<h2>Run Redis:</h2>
+
+<ol start="3">
+  <li>Open Command Prompt and navigate to the folder where you extracted Redis.</li>
+  <li>Run the Redis server:
+    <pre><code>redis-server.exe</code></pre>
+  </li>
+</ol>
+
+<h2>Check if Redis is running:</h2>
+
+<ol start="5">
+  <li>Open another Command Prompt window and run:
+    <pre><code>redis-cli.exe ping</code></pre>
+  </li>
+  <li>You should see a response: <strong>PONG</strong>.</li>
+</ol>
 <h2>Usage</h2>
 <h3>Running the Application</h3>
 
